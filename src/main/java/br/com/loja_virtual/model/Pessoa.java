@@ -25,13 +25,13 @@ public abstract class Pessoa implements Serializable {
     private String telefone;
 
     @OneToMany(mappedBy = "pessoa", orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Endereo> endereos = new ArrayList<>();
+    private List<Endereco> endereos = new ArrayList<>();
 
-    public List<Endereo> getEndereos() {
+    public List<Endereco> getEndereos() {
         return endereos;
     }
 
-    public void setEndereos(List<Endereo> endereos) {
+    public void setEndereos(List<Endereco> endereos) {
         this.endereos = endereos;
     }
 

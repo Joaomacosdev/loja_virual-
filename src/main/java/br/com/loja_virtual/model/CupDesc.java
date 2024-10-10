@@ -17,13 +17,10 @@ public class CupDesc implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_cup_desc")
     private Long id;
 
-    @Column(name = "cod_desc")
     private String codDesc;
 
-    @Column(name = "valor_real_desc")
     private BigDecimal valorRealDesc;
 
-    @Column(name = "valor_porcet_des")
     private BigDecimal valorPorcentlDesc;
 
     @Temporal(TemporalType.DATE)

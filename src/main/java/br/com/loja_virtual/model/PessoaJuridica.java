@@ -15,16 +15,12 @@ public class PessoaJuridica extends Pessoa {
     @Column(nullable = false)
     private String cnpj;
 
-    @Column(name = "insc_estadual")
     private String inscEstadual;
 
-    @Column(name = "insc_municipal")
     private String inscMunicipal;
 
-    @Column(name = "nome_fantazia")
     private String nomeFantazia;
 
-    @Column(name = "razao_social")
     private String razaoSocial;
 
     private String categoria;

@@ -25,17 +25,13 @@ public class ContaReceber implements Serializable {
     private StatusContaReceber statusContaReceber;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "dt_vencimento")
     private Date dtVencimento;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "dt_pagamento")
     private Date dtPagamento;
 
-    @Column(name = "valor_total")
     private BigDecimal valorTotal;
 
-    @Column(name = "valor_desconto")
     private BigDecimal valorDesconto;
 
     @ManyToOne(targetEntity = Pessoa.class)

@@ -16,23 +16,17 @@ public class NotaFiscalCompra implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_nota_fiscal")
     private Long id;
 
-    @Column(name = "numero_nota")
     private String numeroNota;
 
-    @Column(name = "serie_nota")
     private String serieNota;
 
-    @Column(name = "descricao_nota")
     private String descricaoNota;
 
-    @Column(name = "valor_total")
     private BigDecimal valorTotal;
 
 
-    @Column(name = "valor_nota")
     private BigDecimal valorNota;
 
-    @Column(name = "valor_icms")
     private BigDecimal valorIcms;
 
     @Temporal(TemporalType.DATE)

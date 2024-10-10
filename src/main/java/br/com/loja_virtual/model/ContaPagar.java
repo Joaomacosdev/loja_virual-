@@ -19,18 +19,14 @@ public class ContaPagar {
 
     private String descricao;
 
-    @Column(name = "valor_desconto")
     private BigDecimal valorDesconto;
 
-    @Column(name = "valor_total")
     private BigDecimal valorTotal;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "data_vencimento")
     private Date dtVencimento;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "data_pagamento")
     private Date dtPagamento;
 
 

@@ -34,19 +34,14 @@ public class Produto implements Serializable {
 
     private Double profundidade;
 
-    @Column(name = "valor_venda")
     private BigDecimal valorVenda = BigDecimal.ZERO;
 
-    @Column(name = "qtd_estoque")
     private Integer qtdEstoque = 0;
 
-    @Column(name = "qtd_alerta_estoque")
     private Integer qtdAlertaEstoque = 0;
 
-    @Column(name = "link_youtube")
     private String linkYoutube;
 
-    @Column(name = "alerta_qtd_estoque")
     private Boolean alertaQtdEstoque = Boolean.FALSE;
 
     private Integer qtdClique = 0;

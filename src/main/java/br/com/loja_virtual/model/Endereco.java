@@ -10,7 +10,7 @@ import java.util.Objects;
 @Entity(name = "Endereco")
 @Table(name = "endereco")
 @SequenceGenerator(name = "seq_endereco", sequenceName = "seq_endereco", allocationSize = 1, initialValue = 1)
-public class Endereo implements Serializable {
+public class Endereco implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -117,7 +117,7 @@ public class Endereo implements Serializable {
     public boolean equals(Object object) {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
-        Endereo endereo = (Endereo) object;
+        Endereco endereo = (Endereco) object;
         return Objects.equals(id, endereo.id);
     }
 

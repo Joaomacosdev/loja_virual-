@@ -15,7 +15,7 @@ public class PessoaFisica extends Pessoa{
     private String cpf;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "data_nascimento", nullable = false)
+    @Column(nullable = false)
     private Date dataNascimento;
 
     public String getCpf() {
